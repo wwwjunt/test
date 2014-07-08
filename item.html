@@ -1,0 +1,873 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" href="css/shouye.css" rel="stylesheet" />
+<link type="text/css" href="css/item.css" rel="stylesheet" />
+<script type="text/javascript" language="javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/shouye.js"></script>
+<script type="text/javascript" language="javascript" src="js/item.js"></script>
+<script type="text/javascript" src="js/jquery.jqzoom-core.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){  
+    var options = {  
+            zoomType: 'standard',//The others admitted option values are 'reverse','drag','innerzoom'.
+            zoomWidth: 428,//The popup window width showing the zoomed area.表示放大框的宽
+            zoomHeight: 483,//The popup window height showing the zoomed area.表示放大框的高
+            // xOffset: 10,//表示离显示展示中等图片的x距离The popup window x offset from the small image. (always positive to move the popup window more on the right if position is "right" or more on the left if position is "left")
+            //yOffset: 0,//表示离显示中等图片的Y距离The popup window y offset from the small image. (always positive to move the popup window more on the top if position is "top" or more on the bottom if position is "bottom"),
+            position: 'right',//表示显示的放大框在浏览器的center，还是left,还是rightThe popup window position.Admitted values:'right' ,'left' ,'top' ,'bottom'
+            preloadImages: true,//if set to true,jqzoom will preload large images.
+            preloadText: '图像加载中',//The text to show while preloading images.
+            title: false,//Show a small title over the zoomed window it can be the anchor title and if not specified,it will get the small image title.
+            lens: true,//表示显示在中等图片的缩放位置是否显示，默认为true,if set to false,the small lens,over the image, won't show.
+            //imageOpacity: 0.4,//Set the image opacity when the 'zoomType' option is set to 'reverse'.
+            showEffect: 'show',//The effect by which showing the popup window.Options available: 'show' ,'fadein'.
+            hideEffect: 'hide',//The effect by which hiding the popup window.Options available: 'hide' ,'fadeout'.
+            //fadeinSpeed: 'slow',//Changes fade in speed,in case the showEffect option is set to 'fadein'.(options: 'fast','slow',number)
+            //fadeoutSpeed: '2000',//Changes fade out speed,in case the hideEffect option is set to 'fadeout'.(options: 'fast','slow',number)
+            alwaysOn:false,//表示放大框是否一直显示
+    };  
+    $('.jqzoom').jqzoom(options);  
+}); 
+</script>
+<link rel="stylesheet" href="css/jquery.jqzoom.css" type="text/css" />
+<title>唯品会</title>
+</head>
+<body>
+	<div class="header">
+		<div class="header_bg">
+			<div class="header_nav">
+				<ul class="header_nav_list fst">
+					<li><a href="#" target="_blank" class="hnl_item selected">特卖会</a></li>
+					<li><a href="#" target="_blank" class="hnl_item">爱丽奢</a></li>
+					<li><a href="#" target="_blank" class="hnl_item">唯品团</a></li>
+					<li><a href="#" target="_blank" class="hnl_item hnl_last"><span class="hnl_icon">手机版</span></a></li>
+				</ul>
+				<div class="header_nav_contact">
+					<span class="hnt_phone far">400-6789-888</span>
+					<span class="hnt_serve"><a href="#" target="_blank">联系客服</a></span>
+					<ul class="hnt_member">
+						<li class="hnt_member_top">会员服务</li>
+						<li><a href="#" target="_blank">帮助中心</a></li>
+						<li><a href="#" target="_blank">会员留言</a></li>
+						<li><a href="#" target="_blank">服务监督</a></li>
+						<li><a href="#" target="_blank" class="new_vipclub"><i class="i_vip_new"></i>会员俱乐部</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header_mid">
+			<div class="header_logo">
+				<a href="#"><img src="image/vip.png" alt="一家专门做特卖的网站" /></a>
+			</div>
+			<div class="header_tool">
+				<div class="login_before">
+				    <a href="#" class="btn_login">登录</a>
+				    <a href="#" class="btn_reg">免费注册</a>
+				</div>
+				<ul class="ht_list">
+					<li><a href="#" target="_blank">购物袋</a></li>
+					<li class="ht_order" data-hover="ht_order_hover">
+						<ul class="ht_order_list">
+							<li class="ht_order_top"><a href="#" target="_blank">我的订单<i class="l_icon"></i></a></li>
+							<li><a href="#" target="_blank">自助退货</a></li>
+						</ul>
+					</li>
+					<li><a href="#" target="_blank">唯品卡</a></li>
+					<li><a href="#" target="_blank">积分兑换</a></li>
+					<li class="ht_order fashion_list">
+						<ul class="ht_order_list">
+							<li class="ht_order_top"><a href="#" target="_blank">时尚会<i class="l_icon"></i></a></li>
+							<li><a href="#" target="_blank">会员特刊</a></li>
+						</ul>
+					</li>
+					<li class="ht_weibo">
+					    <span><a class="ht_weibo_top">关注</a></span>
+						<div class="weibo_list">
+							<dl class="weibo_list_l fwr">
+								<dd class="weixin_icon">用微信扫一扫</dd>
+								<dt></dt>
+								<dd>订阅唯品会官方微信</dd>
+							</dl>
+							<ul class="weibo_list_r">
+								<li><a href="#" target="_blank" class="weibo_sina"></a></li>
+								<li><a href="#" target="_blank" class="weibo_qq"></a></li>
+								<li><a href="#" target="_blank" class="weibo_163"></a></li>
+								<li><a href="#" target="_blank" class="weibo_shouhu"></a></li>
+							</ul>
+						</div> 
+					</li>
+					<li class="ht_collect_con"><a href="#" class="ht_collect">收藏</a></li>
+				</ul>
+			</div>
+			
+			<!-- 购物袋 -->
+			<div class="header_cart">
+				<div class="header_cart_con gray_header">
+					<a href="#" class="header_cart_title">特卖会购物袋</a>
+					<a href="#" class="header_cart_num J_cart_count">0</a>
+				</div>
+				<div class="header_cart_list">
+					<div class="header_cart_empty fwr gray_header">
+						<p class="hce_title">您的购物袋还没有商品，再去逛逛吧~</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_bot">
+			<div class="header_bot_con">
+				<ul class="header_snav fwr">
+					<li><a href="#" class="target">首页</a></li>
+					<li><a href="#"><span >美妆频道</span></a></li>
+					<li><a href="#"><span class="">亲子频道</span></a></li>
+					<li><a href="#"><span class="">居家频道</span></a></li>
+					<li><a href="#"><span class="daily_icon">明天上线</span></a></li>
+				</ul>
+				<div style="display: block;" class="header_class">
+					<span class="header_class_title">在售商品分类</span>
+					<div class="header_class_list">
+						<ul class="hcl_class">
+							<li class="active">
+								<div class="hlc_icon hlc_class1">
+									<p>服饰</p>
+								</div>
+							</li>
+							<li>
+								<div class="hlc_icon hlc_class3">
+									<p>鞋类</p>
+								</div>
+							</li>
+							<li>
+								<div class="hlc_icon hlc_class5">
+									<p>箱包</p>
+								</div>
+							</li>
+							<li>
+								<div class="hlc_icon hlc_class8">
+									<p>家居用品</p>
+								</div>
+							</li>
+							<li>
+								<div class="hlc_icon hlc_class9">
+									<p>文体用品</p>
+								</div>
+							</li>
+						</ul>
+						<div class="hcl_con">
+							<div style="display: block;">
+								<dl>
+									<dt>上装</dt>
+									<dd><a href="#" target="_blank">T恤</a></dd>
+									<dd><a href="#" target="_blank">Polo</a></dd>
+									<dd><a href="#" target="_blank">外套</a></dd>
+									<dd><a href="#" target="_blank">毛衣</a></dd>
+									<dd><a href="#" target="_blank">针织衫</a></dd>
+									<dd><a href="#" target="_blank">衬衫</a></dd>
+								</dl>
+								<dl>
+									<dt>裙装</dt>
+									<dd><a href="#" target="_blank">T恤</a></dd>
+									<dd><a href="#" target="_blank">Polo</a></dd>
+									<dd><a href="#" target="_blank">外套</a></dd>
+									<dd><a href="#" target="_blank">毛衣</a></dd>
+									<dd><a href="#" target="_blank">针织衫</a></dd>
+									<dd><a href="#" target="_blank">衬衫</a></dd>
+								</dl>
+								<dl>
+									<dt>裤装</dt>
+									<dd><a href="#" target="_blank">T恤</a></dd>
+									<dd><a href="#" target="_blank">Polo</a></dd>
+									<dd><a href="#" target="_blank">外套</a></dd>
+									<dd><a href="#" target="_blank">毛衣</a></dd>
+									<dd><a href="#" target="_blank">针织衫</a></dd>
+									<dd><a href="#" target="_blank">衬衫</a></dd>
+								</dl>
+							</div>
+							<div style="display: none;">
+								<dl>
+									<dt>男鞋</dt>
+									<dd><a href="#" target="_blank">休闲鞋</a></dd>
+									<dd><a href="#" target="_blank">皮鞋</a></dd>
+									<dd><a href="#" target="_blank">凉鞋</a></dd>
+									<dd><a href="#" target="_blank">跑鞋</a></dd>
+									<dd><a href="#" target="_blank">拖鞋</a></dd>
+									<dd><a href="#" target="_blank">网球鞋</a></dd>
+									<dd><a href="#" target="_blank">登山鞋</a></dd>
+								</dl>
+								<dl>
+									<dt>女鞋</dt>
+									<dd><a href="#" target="_blank">高跟鞋</a></dd>
+									<dd><a href="#" target="_blank">凉鞋.</a></dd>
+									<dd><a href="#" target="_blank">休闲鞋</a></dd>
+									<dd><a href="#" target="_blank">单鞋</a></dd>
+									<dd><a href="#" target="_blank">运动鞋</a></dd>
+									<dd><a href="#" target="_blank">靴</a></dd>
+									<dd><a href="#" target="_blank">拖鞋</a></dd>
+								</dl>
+								<dl>
+									<dt>童鞋</dt>
+									<dd><a href="#" target="_blank">女童皮鞋</a></dd>
+									<dd><a href="#" target="_blank">女童运动鞋</a></dd>
+									<dd><a href="#" target="_blank">男童凉鞋</a></dd>
+									<dd><a href="#" target="_blank">男童皮鞋</a></dd>
+									<dd><a href="#" target="_blank">男童休闲鞋</a></dd>
+									<dd><a href="#" target="_blank">男童运动鞋</a></dd>
+								</dl>
+							</div>
+							<div style="display: none;">
+								<dl>
+									<dt>女包</dt>
+									<dd><a href="#" target="_blank">钱包</a></dd>
+									<dd><a href="#" target="_blank">手提包</a></dd>
+									<dd><a href="#" target="_blank">手袋</a></dd>
+									<dd><a href="#" target="_blank">背包</a></dd>
+									<dd><a href="#" target="_blank">腰包</a></dd>
+								</dl>
+								<dl>
+									<dt>男包</dt>
+									<dd><a href="#" target="_blank">钱包</a></dd>
+									<dd><a href="#" target="_blank">提包/挎包</a></dd>
+									<dd><a href="#" target="_blank">背包</a></dd>
+								</dl>
+								<dl>
+									<dt>商务包</dt>
+									<dd><a href="#" target="_blank">商务包</a></dd>
+								</dl>
+								<dl>
+									<dt>运动/旅行包</dt>
+									<dd><a href="#" target="_blank">运动包</a></dd>
+									<dd><a href="#" target="_blank">拉杆箱</a></dd>
+								</dl>
+							</div>
+							<div style="display: none;">
+								<dl>
+									<dt>寝具/浴具</dt>
+									<dd><a href="#" target="_blank">床上用品</a></dd>
+									<dd><a href="#" target="_blank">靠枕 / 抱枕</a></dd>
+									<dd><a href="#" target="_blank">毛毯</a></dd>
+									<dd><a href="#" target="_blank">沐浴容器</a></dd>
+									<dd><a href="#" target="_blank">卫浴</a></dd>
+								</dl>
+								<dl>
+									<dt>厨具/餐具</dt>
+									<dd><a href="#" target="_blank">杯具</a></dd>
+									<dd><a href="#" target="_blank">厨房刀具</a></dd>
+									<dd><a href="#" target="_blank">烹饪锅具</a></dd>
+									<dd><a href="#" target="_blank">厨房容器</a></dd>
+									<dd><a href="#" target="_blank">收纳用品</a></dd>
+								</dl>
+								<dl>
+									<dt>食品</dt>
+									<dd><a href="#" target="_blank">其它食品</a></dd>
+								</dl>
+							</div>
+							<div style="display: none;">
+								<dl>
+									<dt>文具</dt>
+									<dd><a href="#" target="_blank">文具盒/笔袋</a></dd>
+								</dl>
+								<dl>
+									<dt>运动用品</dt>
+									<dd><a href="#" target="_blank">户外用品</a></dd>
+								</dl>
+								<dl>
+									<dt>玩具</dt>
+									<dd><a href="#" target="_blank">电动玩具</a></dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="FW_wrap fwr">
+	    <div class="FW_product clearfix">
+	        <div class="M_class">
+	            <a>首页 > </a>
+	            <a>索玛SOMSOM女装专场</a> > 黑色斗篷单排扣短袖连衣裙            
+	        </div>
+	        <div class="M_pic">
+	            <div class="itempic_sliderwrapper">
+	                <span class="sold_tag "></span>
+	                <div class="show_midpic">
+	                    <a href="image/SUOMA-21E1539-A0-1.jpg" class="jqzoom" rel='gal1'  title="triumph" >
+	                        <img src="image/SUOMA-21E1539-A0-1_1.jpg"  title="triumph" />
+	                    </a>
+	                    <em class="icon_a"></em>
+	                </div> 
+	            </div>
+	            <div class="pic_slider">
+	                <span class="pic_slider_up switchable-first">
+	                    <em class="arrow_out"><em class="arrow_in"></em></em>
+	                </span>
+	                <div class="pic_slider_list clearfix">
+	                <ul class="pic_slider_contain clearfix" id="thumblist">
+	                    <li class="pic_slider_items">
+	                        <a class="zoomThumbActive  pic_slider_cur" href='javascript:void(0);' 
+	                        rel="{gallery: 'gal1', smallimage: './image/SUOMA-21E1539-A0-1_1.jpg',largeimage: './image/SUOMA-21E1539-A0-1.jpg'}">
+		                        <img width="57" height="73" src='image/SUOMA-21E1539-A0-1_2.jpg' />
+	                            <span class="pic_slider_shadow"></span>
+		                    </a>
+		               </li>
+		               <li class="pic_slider_items">
+		                    <a href='javascript:void(0);' 
+		                    rel="{gallery: 'gal1', smallimage: './image/SUOMA-21E1539-A0-2_1.jpg',largeimage: './image/SUOMA-21E1539-A0-2.jpg'}">
+		                        <img width="57" height="73" src='image/SUOMA-21E1539-A0-2_2.jpg' />
+	                            <span class="pic_slider_shadow"></span>
+		                    </a>
+		               </li>
+		               <li class="pic_slider_items">
+		                    <a  href='javascript:void(0);' 
+		                    rel="{gallery: 'gal1', smallimage: './image/SUOMA-21E1539-A0-3_1.jpg',largeimage: './image/SUOMA-21E1539-A0-3.jpg'}">
+		                        <img  width="57" height="73" src='image/SUOMA-21E1539-A0-3_2.jpg' />
+	                            <span class="pic_slider_shadow"></span>
+		                    </a>
+		               </li>
+		               <li class="pic_slider_items">
+		                    <a  href='javascript:void(0);' 
+		                    rel="{gallery: 'gal1', smallimage: './image/SUOMA-21E1539-A0-4_1.jpg',largeimage: './image/SUOMA-21E1539-A0-4.jpg'}">
+		                        <img  width="57" height="73" src='image/SUOMA-21E1539-A0-4_2.jpg' />
+	                            <span class="pic_slider_shadow"></span>
+		                    </a>
+		               </li>
+		               <li class="pic_slider_items">
+		                    <a  href='javascript:void(0);' 
+		                    rel="{gallery: 'gal1', smallimage: './image/SUOMA-21E1539-A0-15_1.jpg',largeimage: './image/SUOMA-21E1539-A0-15.jpg'}">
+		                        <img  width="57" height="73" src='image/SUOMA-21E1539-A0-15_2.jpg' />
+	                            <span class="pic_slider_shadow"></span>
+		                    </a>
+		               </li>
+		               <li class="pic_slider_items">
+		                    <a  href='javascript:void(0);' 
+		                    rel="{gallery: 'gal1', smallimage: './image/SUOMA-21E1539-A0-3_1.jpg',largeimage: './image/SUOMA-21E1539-A0-3.jpg'}">
+		                        <img  width="57" height="73" src='image/SUOMA-21E1539-A0-3_2.jpg' />
+	                            <span class="pic_slider_shadow"></span>
+		                    </a>
+		               </li>
+	                </ul>
+	                </div>
+	                <span class="pic_slider_down switchable-last">
+	                    <em class="arrow_out"><em class="arrow_in"></em></em>
+	                </span>
+	            </div>
+	        </div>
+	        <div class="M_productInfo">
+	            <div class="pi_title_box clearfix">
+	                <span class="pib_time pib_time_10">
+	                    <span class="pib_time_inner">
+	                                                剩余：
+	                        <em>0</em>天<em>08</em>时<em>08</em>分<em>08</em>秒
+	                        <span class="pib_timeline_full"></span>
+	                        <span class="pib_timeline_now"></span>
+	                    </span>
+	                </span>
+	                <div class="pib_title">
+	                    <p class="pib_title_class">
+	                        <a>索玛 </a>
+	                    </p>
+	                    <p class="pib_title_detail">黑色斗篷单排扣短袖连衣裙</p>
+	                </div>
+	            </div>
+	            <div class="pi_price_box">
+	                <span class="pbox_price">
+	                    <i class="pbox_yen">¥</i>
+	                    <em>219</em>
+	                </span>
+	                <span class="pbox_off">2.5折</span>
+	                <span class="pbox_market">市场价:¥<del>868</del></span>
+	            </div>
+	            <div class="pi_attr_box">
+	                <form class="cartAdd_form">
+	                    <dl class="i_freight">
+	                        <dt class="freight_name">运费：</dt>
+	                        <dd class="freight_con">
+	                            <span>¥10（订单满288免运费）</span>
+	                        </dd>
+	                    </dl>
+	                    <dl class="i_size clearfix">
+	                        <dt class="size_name">尺码：</dt>
+	                        <dd class="i_notice_msg">请选择尺码</dd>
+	                        <dd class="size_list">
+	                            <ul>
+	                                <li class="size_list_item selected" style="z-index: 4;">
+	                                    <span>S</span>
+	                                    <span class="i_select"></span>
+	                                    <div class="size_pop">
+	                                        <i class="size_arrow">◆<i class="inner_arrow">◆</i></i>
+	                                        <div class="bd">
+	                                            <div class="pop_list_wrap">
+	                                                <ul class="pop_size_list clearfix">
+	                                                    <li class="fl"><span>肩宽：33</span></li>
+	                                                    <li class="fl"><span>胸围：84</span></li>
+	                                                    <li class="fl"><span>腰围：72</span></li>
+	                                                    <li class="fl"><span>裙长：81.5/33</span></li>
+	                                                </ul>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </li>
+	                                <li class="size_list_item" style="z-index: 4;">
+	                                    <span>M</span>
+	                                    <span class="i_select"></span>
+	                                    <div class="size_pop">
+	                                        <i class="size_arrow">◆<i class="inner_arrow">◆</i></i>
+	                                        <div class="bd">
+	                                            <div class="pop_list_wrap">
+	                                                <ul class="pop_size_list clearfix">
+	                                                    <li class="fl"><span>肩宽：33</span></li>
+	                                                    <li class="fl"><span>胸围：84</span></li>
+	                                                    <li class="fl"><span>腰围：72</span></li>
+	                                                    <li class="fl"><span>裙长：81.5/33</span></li>
+	                                                </ul>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </li>
+	                                <li class="size_list_item sli_disabled" style="z-index: 4;">
+	                                    <span>L</span>
+	                                    <span></span>
+	                                    <div class="size_pop">
+	                                        <i class="size_arrow">◆<i class="inner_arrow">◆</i></i>
+	                                        <div class="bd">
+	                                            <div class="pop_list_wrap">
+	                                                <ul class="pop_size_list clearfix">
+	                                                    <li class="fl"><span>肩宽：33</span></li>
+	                                                    <li class="fl"><span>胸围：84</span></li>
+	                                                    <li class="fl"><span>腰围：72</span></li>
+	                                                    <li class="fl"><span>裙长：81.5/33</span></li>
+	                                                </ul>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </li>
+	                            </ul>
+	                        </dd>
+	                        <dd class="size_table">查看尺码表</dd>
+	                    </dl>
+	                    <dl class="i_num clearfix">
+	                        <dt class="num_name">数量：</dt>
+	                        <dd class="i_notice_msg">同尺码限购<span>2</span>件</dd>
+	                        <dd class="num_box">
+	                            <span class="num_reduce num_reduce_disabled"></span>
+	                            <em class="num_input">1</em>
+	                            <span class="num_add"></span>
+	                        </dd>
+	                        <dd class="num_msg">仅剩<span>8</span>件，抓紧时间抢购哦！</dd>
+	                    </dl>
+	                    <dl class="other clearfix">
+	                        <dt class="other_name">编码：</dt>
+	                        <dd class="other_box">21E1539-A0</dd>
+	                    </dl>
+	                    <div class="button">
+	                        <div class="button_box">
+	                            <button class="btn_cart"></button>
+	                            <p class="btn_msg"><span>正在处理中...</span></p>
+	                        </div>
+	                    </div>
+	                </form>
+	            </div>
+	            <div class="pi_share_box">
+	                <a class="share_kx"></a>
+	                <a class="share_db"></a>
+	                <a class="share_rr"></a>
+	                <a class="share_kj"></a>
+	                <a class="share_tx"></a>
+	                <a class="share_sn"></a>
+	                <span class="share_tit widget_share_txt">告诉小伙伴：</span>
+	            </div>
+	            <div class="pi_promise_box clearfix">
+	                <ul class="pi_promise_list new_guest">
+	                    <li class="pi_promise_item item_percent">100%正品保证</li>
+	                    <li class="pi_promise_item item_7day">七天无理由退货</li>
+	                    <li class="pi_promise_item item_free">退货返运费</li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+        <div class="M_saleRecom"></div>
+        <div class="FW_detail">
+            <div class="M_detail">
+                <div class="M_detailTop">
+                    <ul class="dt_list">
+                        <li>
+                            <a class="dt_list_item selected">商品详情</a>
+                        </li>
+                        <li>
+                            <a class="dt_list_item">商品推荐</a>
+                        </li>
+                        <li>
+                            <a class="dt_list_item">商品咨询</a>
+                        </li>
+                        <li>
+                            <a class="dt_list_item">关于我们</a>
+                        </li>
+                    </ul>
+                    <div class="dt_cart hidden">
+                        <span class="dt_cart_price">
+                            <i class="dt_cart_yen">¥</i>
+                            <em>219</em>
+                        </span>
+                        <span class="dt_cart_mprice">市场价：<del>¥868</del></span>
+                        <a class="dt_cart_btn">
+                            <span>加入购物袋</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="M_detailCon">
+                    <p class="dc_tit">商品尺码<i class="far">Size</i></p>
+                    <div class="dc_size">
+                        <dl class="dc_size_tip">
+                            <dt>TIPS:</dt>
+                            <dd>1. 选购时，请综合参考尺码表中各项参数，有助于您选择到更合适的尺码。</dd>
+                            <dd>2.（只适用服装）平铺测量自己的合身服装尺寸作参考，对比选购更准确！</dd>
+                        </dl>
+                        <h4 class="dc_size_tit">尺码对照表：</h4>
+                        <div class="pro_size_table">
+                            <table class="pro_size_tab">
+                                <tbody>
+                                    <tr class="pro_size_tab_bg_a"><td>尺码</td><td>号型</td><td>肩宽</td><td>胸围</td><td>袖长</td><td>腰围</td><td>裙长</td></tr>
+                                    <tr><td>S</td><td>/</td><td>33</td><td>84</td><td>/</td><td>72</td><td>81.5/33</td></tr>
+                                    <tr><td>M</td><td>/</td><td>34</td><td>88</td><td>/</td><td>76</td><td>83/34</td></tr>
+                                    <tr><td>L</td><td>/</td><td>35</td><td>92</td><td>/</td><td>80</td><td>84.5/35</td></tr>
+                                    <tr><td>XL</td><td>/</td><td>36</td><td>96</td><td>/</td><td>84</td><td>85.5/36</td></tr>
+                                    <tr><td class="tag tag02" colspan="8"><font class="light_red">温馨提示：</font>此款裙长为内裙长/外衣长</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="M_detail" style="width:1000px">
+                        <div class="M_detailCon">
+                            <p class="dc_tit">商品参数<i class="far">Detail</i></p>
+                            <div class="dc_info clearfix">
+                                <table class="dc_table fst">
+                                    <tbody>
+                                        <tr><td class="dc_table_tit">品牌名称：</td><td>索玛SOMSOM</td></tr>
+                                        <tr><td class="dc_table_tit">商品名称：</td><td>黑色斗篷单排扣短袖连衣裙</td></tr>
+                                        <tr><td class="dc_table_tit">产    地：</td><td>温州</td></tr>
+                                        <tr><td class="dc_table_tit">材    质：</td><td>面料成分：100%聚酯纤维,里料成分：100%聚酯纤维</td></tr>
+                                        <tr><td class="dc_table_tit">洗涤说明： </td><td>最高洗涤温度40°C.不可漂白，在阴凉处悬挂晾干，烫斗底板最高温度 150°C，单独洗涤，不可烘干，顺褶熨烫。</td></tr>
+                                        <tr><td class="dc_table_tit">备    注：</td><td>无配件</td></tr>
+                                        <tr><td class="dc_table_tit">积    分：</td><td>您购买此件商品可获得219积分。</td></tr>
+                                        <tr><td class="dc_table_tit">货品编号：</td><td>21E1539-A0</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="dc_tit">商品图片<i class="far">Image</i></p> 
+                            <div class="dc_img">
+                                <div class="dc_img_con">
+                                    <img src="image/SUOMA-21E1539-A0-1.jpg" width="495" height="626" style="display: inline;"/>
+                                    <img src="image/SUOMA-21E1539-A0-2.jpg" width="495" height="626" style="display: inline;"/>
+                                    <img src="image/SUOMA-21E1539-A0-3.jpg" width="495" height="626" style="display: inline;"/>
+                                    <img src="image/SUOMA-21E1539-A0-4.jpg" width="495" height="626" style="display: inline;"/>
+                                    <img src="image/SUOMA-21E1539-A0-15.jpg" width="495" height="626" style="display: inline;"/>
+                                    <img src="image/SUOMA-21E1539-A0-16.jpg" width="495" height="626" style="display: inline;"/>
+                                </div>
+                                <div class="dc_img_detail">
+                                    <p>
+                                        <img src="image/SUOMA-21E1539-A0-6.jpg" style="display: inline;"></img>
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="FW_recomBox">
+            <div class="M_detailTop">
+                <ul class="dt_list">
+                    <li><a class="dt_list_item">商品详情</a></li>
+                    <li><a class="dt_list_item selected">商品推荐</a></li>
+                    <li><a class="dt_list_item">商品咨询</a></li>
+                    <li><a class="dt_list_item">关于我们</a></li>
+                </ul>
+            </div>
+            <div class="M_recom">
+                <div class="R100300">
+                    <div class="reco-head">
+                        <span class="reco-title">关注了该商品的用户还在关注</span>
+                    </div>
+                    <div class="reco-content">
+                        <a class="reco-item" title="蓝色短袖牛仔连衣裙">
+                            <img class="item-image" src="image/HSTYLE-GJ33340003-5.jpg" alt="蓝色短袖牛仔连衣裙" />
+                            <span class="item-brand">韩都衣舍</span>
+                            <span class="item-name">蓝色短袖牛仔连衣裙</span>
+                            <div class="item-price">
+                                <span class="price-vipshop">¥158</span>
+                                <span class="price-agio">(3折)</span>
+                                <span class="price-market">¥528</span>
+                            </div>
+                        </a>
+                        <a class="reco-item" title="蓝色短袖牛仔连衣裙">
+                            <img class="item-image" src="image/HSTYLE-GJ33340003-5.jpg" alt="蓝色短袖牛仔连衣裙" />
+                            <span class="item-brand">韩都衣舍</span>
+                            <span class="item-name">蓝色短袖牛仔连衣裙</span>
+                            <div class="item-price">
+                                <span class="price-vipshop">¥158</span>
+                                <span class="price-agio">(3折)</span>
+                                <span class="price-market">¥528</span>
+                            </div>
+                        </a>
+                        <a class="reco-item" title="蓝色短袖牛仔连衣裙">
+                            <img class="item-image" src="image/HSTYLE-GJ33340003-5.jpg" alt="蓝色短袖牛仔连衣裙" />
+                            <span class="item-brand">韩都衣舍</span>
+                            <span class="item-name">蓝色短袖牛仔连衣裙</span>
+                            <div class="item-price">
+                                <span class="price-vipshop">¥158</span>
+                                <span class="price-agio">(3折)</span>
+                                <span class="price-market">¥528</span>
+                            </div>
+                        </a>
+                        <a class="reco-item" title="蓝色短袖牛仔连衣裙">
+                            <img class="item-image" src="image/HSTYLE-GJ33340003-5.jpg" alt="蓝色短袖牛仔连衣裙" />
+                            <span class="item-brand">韩都衣舍</span>
+                            <span class="item-name">蓝色短袖牛仔连衣裙</span>
+                            <div class="item-price">
+                                <span class="price-vipshop">¥158</span>
+                                <span class="price-agio">(3折)</span>
+                                <span class="price-market">¥528</span>
+                            </div>
+                        </a>
+                        <a class="reco-item" title="蓝色短袖牛仔连衣裙">
+                            <img class="item-image" src="image/HSTYLE-GJ33340003-5.jpg" alt="蓝色短袖牛仔连衣裙" />
+                            <span class="item-brand">韩都衣舍</span>
+                            <span class="item-name">蓝色短袖牛仔连衣裙</span>
+                            <div class="item-price">
+                                <span class="price-vipshop">¥158</span>
+                                <span class="price-agio">(3折)</span>
+                                <span class="price-market">¥528</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="recom_top">
+                    <span class="recom_top_con">您最近浏览的</span>
+                </div>
+                <ul class="recom_list">
+                    <li class="recom_list_item">
+                        <a><img width="180" height="227" src="image/SUOMA-21E1539-A0-5.jpg"></img></a>
+                        <p class="rli_name"><a>索玛SOMSOM女装专场</a></p>
+                        <p class="rli_name"><a>黑色斗篷单排扣短袖连衣裙</a></p>
+                        <p class="rli_price"><span>¥219</span><del>¥868</del></p>
+                    </li>
+                    <li class="recom_list_item">
+                        <a><img width="180" height="227" src="image/SUOMA-21E1539-A0-5.jpg"></img></a>
+                        <p class="rli_name"><a>索玛SOMSOM女装专场</a></p>
+                        <p class="rli_name"><a>黑色斗篷单排扣短袖连衣裙</a></p>
+                        <p class="rli_price"><span>¥219</span><del>¥868</del></p>
+                    </li>
+                    <li class="recom_list_item">
+                        <a><img width="180" height="227" src="image/SUOMA-21E1539-A0-5.jpg"></img></a>
+                        <p class="rli_name"><a>索玛SOMSOM女装专场</a></p>
+                        <p class="rli_name"><a>黑色斗篷单排扣短袖连衣裙</a></p>
+                        <p class="rli_price"><span>¥219</span><del>¥868</del></p>
+                    </li>
+                    <li class="recom_list_item">
+                        <a><img width="180" height="227" src="image/SUOMA-21E1539-A0-5.jpg"></img></a>
+                        <p class="rli_name"><a>索玛SOMSOM女装专场</a></p>
+                        <p class="rli_name"><a>黑色斗篷单排扣短袖连衣裙</a></p>
+                        <p class="rli_price"><span>¥219</span><del>¥868</del></p>
+                    </li>
+                    <li class="recom_list_item">
+                        <a><img width="180" height="227" src="image/SUOMA-21E1539-A0-5.jpg"></img></a>
+                        <p class="rli_name"><a>索玛SOMSOM女装专场</a></p>
+                        <p class="rli_name"><a>黑色斗篷单排扣短袖连衣裙</a></p>
+                        <p class="rli_price"><span>¥219</span><del>¥868</del></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	    <div class="FW_question">
+	        <div class="M_detailTop">
+	            <ul class="dt_list">
+	                <li><a class="dt_list_item">商品详情</a></li>
+	                <li><a class="dt_list_item">商品推荐</a></li>
+	                <li><a class="dt_list_item selected">商品咨询</a></li>
+	                <li><a class="dt_list_item">关于我们</a></li>
+	            </ul>
+	        </div>
+	        <div class="M_question">
+	            <div class="q_tit">                     购买前如有问题，请向唯品会咨询。
+	                <a class="q_tit_btn"><span>联系客服</span></a>
+	            </div>
+	            <dl class="q_tit_item">
+	                <dt class="qti_question">商品都是正品吗？</dt>
+	                <dd class="qti_answer">请您放心，唯品会www.vip.com上所售卖的商品均经过品牌授权，确保正品，并由中国太平洋财产保险股份有限公司为您购买的每一件商品进行承保。</dd>
+	            </dl>
+	            <dl class="q_tit_item">
+	                <dt class="qti_question">衣服图片上搭配的腰带、项链等配件，会连商品一同送货吗？</dt>
+	                <dd class="qti_answer">这点请注意咯，如非特别说明，服装类商品图片中的腰带、饰品等配件均为拍摄搭配之用，是不包含在所售商品中的。</dd>
+	            </dl>
+	            <dl class="q_tit_item">
+	                <dt class="qti_question">尺码表上的尺码标准吗？</dt>
+	                <dd class="qti_answer">唯品会所售商品尺寸均为人工测量，可能会存在1-2cm的正常误差范围。</dd>
+	            </dl>
+	            <dl class="q_tit_item">
+	                <dt class="qti_question">图片颜色和实物颜色是否相同？</dt>
+	                <dd class="qti_answer">唯品会所有商品均采用专业拍摄，力求将最真实的信息传达至您的视线。但由于个人显示器不同，可能导致实物与图片存在色差，最终颜色以实物为准。</dd>
+	            </dl>
+	            <dl class="q_tit_item">
+	                <dt class="qti_question">为什么我收到的商品包装和图片显示的不一致？</dt>
+	                <dd class="qti_answer">由于部分商品生产批次不一，您收到货品的包装有可能与网站上图片不完全一致，但唯品会保证所售商品均为正品，商品包装请以实物为准。</dd>
+	            </dl>
+	            <dl class="q_tit_item">
+	                <dt class="qti_question">网站上显示的市场价和实体店的售价一致吗？</dt>
+	                <dd class="qti_answer">唯品会的市场价采集自品牌官网标价、专柜标价或由品牌供应商提供。由于地区或时间的差异性，可能与您购物时的市场价不一致。唯品会网站标注的市场价仅供您参考，不作为购物依据。</dd>
+	            </dl>
+	            <dl class="q_tit_item">
+	                <dt class="qti_question">如何退货？</dt>
+	                <dd class="qti_answer">您签收商品之日起的7天之内，商品未经穿着不影响二次销售的情况下，唯品会为您提供无理由退货服务。
+	                    <a>查看详细退货政策»</a>
+	                </dd>
+	            </dl>
+	            <div class="q_return">
+	                <h4>退货流程如下：</h4>
+	                <p><img width="770" height="40" src="image/goods_return_img.png" style="display: inline;" /></p>
+	            </div>
+	        </div>
+	    </div>
+        <div class="FW_aboutUs">
+            <div class="M_detailTop">
+                <ul class="dt_list">
+                    <li><a class="dt_list_item">商品详情</a></li>
+                    <li><a class="dt_list_item">商品推荐</a></li>
+                    <li><a class="dt_list_item">商品咨询</a></li>
+                    <li><a class="dt_list_item selected">关于我们</a></li>
+                </ul>
+            </div>
+            <div class="M_aboutUs">
+                <ul class="icon_list clearfix">
+                    <li class="J_aboutUs_trigger selected"><a class="il_item item_zp"></a></li>
+                    <li class="J_aboutUs_trigger"><a class="il_item item_xl"></a></li>
+                    <li class="J_aboutUs_trigger"><a class="il_item item_tk"></a></li>
+                    <li class="J_aboutUs_trigger"><a class="il_item item_ps"></a></li>
+                    <li class="J_aboutUs_trigger"><a class="il_item item_kf"></a></li>
+                    <li class="J_aboutUs_trigger"><a class="il_item item_pp"></a></li>
+                    <li class="J_aboutUs_trigger"><a class="il_item item_yj"></a></li>
+                </ul>
+                <div class="au_main J_aboutUs_content" style="display: block;">
+                    <div class="au_top au_top_zp"></div>
+                    <div class="au_con">
+                        <img width="900" height="427" src="image/detail_about_zp_v1.jpg" style="display: inline;"></img>
+                    </div>
+                </div>
+                <div class="au_main J_aboutUs_content" style="display: none;">
+                    <div class="au_top au_top_xl"></div>
+                    <div class="au_con">
+                        <img width="900" height="427" src="image/detail_about_xl_v1.jpg" style="display: inline;"></img>
+                    </div>
+                </div>
+                <div class="au_main J_aboutUs_content" style="display: none;">
+                    <div class="au_top au_top_tk"></div>
+                    <div class="au_con">
+                        <img width="900" height="427" src="image/detail_about_tk_v1.jpg" style="display: inline;"></img>
+                    </div>
+                </div>
+                <div class="au_main J_aboutUs_content" style="display: none;">
+                    <div class="au_top au_top_ps"></div>
+                    <div class="au_con">
+                        <img width="900" height="427" src="image/detail_about_ps_v1.jpg" style="display: inline;"></img>
+                    </div>
+                </div>
+                <div class="au_main J_aboutUs_content" style="display: none;">
+                    <div class="au_top au_top_kf"></div>
+                    <div class="au_con">
+                        <img width="900" height="427" src="image/detail_about_kf_v2.jpg" style="display: inline;"></img>
+                    </div>
+                </div>
+                <div class="au_main J_aboutUs_content" style="display: none;">
+                    <div class="au_top au_top_pp"></div>
+                    <div class="au_con">
+                        <img width="900" height="427" src="image/detail_about_pp_v1.jpg" style="display: inline;"></img>
+                    </div>
+                </div>
+                <div class="au_main J_aboutUs_content" style="display: none;">
+                    <div class="au_top au_top_yj"></div>
+                    <div class="au_con">
+                        <img width="900" height="427" src="image/detail_about_yj_v1.jpg" style="display: inline;"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+ 
+	<!-- 底部 -->
+	<div id="footer">
+	    <div class="f_help_links fSiteBd">
+	        <dl class="f_help_list f_server">
+	            <dt class="f_tit">服务保障</dt>
+	            <dd><a href="#" target="_blank">正品保证</a></dd>
+	            <dd><a href="#" target="_blank">7天无理由退货</a></dd>
+	            <dd><a href="#" target="_blank">退货返运费</a></dd>
+	            <dd><a href="#" target="_blank">7x15小时客户服务</a></dd>
+	        </dl>
+	        <dl class="f_help_list f_buy">
+	            <dt class="f_tit">购物指南</dt>
+	            <dd><a href="#" target="_blank">导购演示</a></dd>
+	            <dd><a href="#" target="_blank">订单操作</a></dd>
+	            <dd><a href="#" target="_blank">会员注册</a></dd>
+	            <dd><a href="#" target="_blank">账户管理</a></dd>
+	            <dd><a href="#" target="_blank">收货样品</a></dd>
+	            <dd><a href="#" target="_blank">会员等级</a></dd>
+	        </dl>
+	        <dl class="f_help_list f_pay">
+	            <dt class="f_tit">支付方式</dt>
+	            <dd><a href="#" target="_blank">23家主流网银支付</a></dd>
+	            <dd><a href="#" target="_blank">货到付款</a></dd>
+	            <dd><a href="#" target="_blank">支付宝、银联等支付</a></dd>
+	            <dd><a href="#" target="_blank">信用卡支付</a></dd>
+	            <dd><a href="#" target="_blank">唯品钱包支付</a></dd>
+	        </dl>
+	        <dl class="f_help_list f_distribution">
+	            <dt class="f_tit">配送方式</dt>
+	            <dd><a href="#" target="_blank">全场满288元免运费</a></dd>
+	            <dd><a href="#" target="_blank">配送范围及运费</a></dd>
+	            <dd><a href="#" target="_blank">验货与签收</a></dd>
+	        </dl>
+	        <dl class="f_help_list f_sell">
+	            <dt class="f_tit">售后服务</dt>
+	            <dd><a href="#" target="_blank">退货政策</a></dd>
+	            <dd><a href="#" target="_blank">退货流程</a></dd>
+	            <dd><a href="#" target="_blank">退款方式和时效</a></dd>
+	        </dl>
+	        <dl class="f_help_list f_client">
+	            <dt class="f_tit">唯品会客户端二维码</dt>
+	            <dd class="qr"><img style="display: inline;" src="image/qr-app.png" alt="唯品会客户端" /></dd>
+	            <dd>下载唯品会移动客户端</dd>
+	        </dl>
+	        <dl class="f_help_list f_code2">
+	            <dt class="f_tit">用微信扫一扫</dt>
+	            <dd><img style="display: inline;" src="image/qr-weixin.png" alt="唯品会微信二维码" /></dd>
+	            <dd><a href="#" target="_blank">订阅唯品会官方微信</a></dd>
+	        </dl>
+	    </div>
+	    <div class="f_site_nav">
+	        <div class="mgc">
+	            <a href="#" target="_blank">关于我们</a>|
+	            <a href="#" target="_blank">About us</a>|
+	            <a href="#" target="_blank">Investor Relations</a>|
+	            <a href="#" target="_blank">媒体报道</a>|
+	            <a href="#" target="_blank">品牌招商</a>|
+	            <a href="#" target="_blank">隐私条款</a>|
+	            <a href="#" target="_blank">友情链接</a>|
+	            <a href="#" target="_blank">唯品诚聘</a>|
+	            <a href="#" target="_blank">365爱心基金</a>|
+	            <a href="#" target="_blank">唯品卡</a>|
+	            <a href="#" target="_blank">用户体验提升计划</a>|
+	            <a href="#" target="_blank">唯品地图</a>
+	        </div>
+	    </div>
+	    <div class="f_site_info f_site_bd">
+	        <p>Copyright © 2008-2014 vip.com，All Rights Reserved
+	        <a href="#" rel="nofollow">粤ICP备08114786号-1</a>
+	        <a href="#" rel="nofollow">许可证：粤B2-20080329 </a> 使用本网站即表示接受
+	        <a href="#" rel="nofollow">唯品会用户协议</a>。<br />版权所有 
+	        <a href="#" rel="nofollow">广州唯品会信息科技有限公司</a>
+	        </p>
+	    </div>
+	</div>
+
+</body>
+</html>
